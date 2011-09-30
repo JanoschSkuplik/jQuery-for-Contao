@@ -31,6 +31,18 @@ $GLOBALS['TL_HOOKS']['generatePage'][] = array('UseJQuery', 'check_jQuery');
 
 //Array of versions and paths
 $GLOBALS['TL_JQUERY_VERSION'] = array(
+	'1.6.4' => array(
+    'jquery_local' => 'plugins/jquery/js/jquery-1.6.4.min.js',
+    'jquery_jquery' => 'http://code.jquery.com/jquery-1.6.4.min.js',
+    'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js',
+    'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.4.min.js'
+  ),
+	'1.6.3' => array(
+    'jquery_local' => 'plugins/jquery/js/jquery-1.6.3.min.js',
+    'jquery_jquery' => 'http://code.jquery.com/jquery-1.6.3.min.js',
+    'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js',
+    'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.3.min.js'
+  ),  
   '1.6.2' => array(
     'jquery_local' => 'plugins/jquery/js/jquery-1.6.2.min.js',
     'jquery_jquery' => 'http://code.jquery.com/jquery-1.6.2.min.js',
