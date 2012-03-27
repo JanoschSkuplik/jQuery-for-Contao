@@ -57,7 +57,7 @@ $GLOBALS['TL_DCA']['tl_layout']['fields']['jquerySource'] = array(
 
 $GLOBALS['TL_DCA']['tl_layout']['fields']['jqueryVersion'] = array(
   'label'                   => &$GLOBALS['TL_LANG']['tl_layout']['jqueryVersion'],
-	'default'                 => '1.6.1',
+	'default'                 => '1.7.2',
 	'exclude'                 => true,
 	'inputType'               => 'select',
 	'options_callback'        => array('tl_layout_jquery', 'getVersions'),

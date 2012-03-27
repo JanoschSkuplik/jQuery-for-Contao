@@ -25,7 +25,7 @@
  * @license    LGPL
  * @filesource
  */
-define('JQUERY','1.5');
+define('JQUERY','1.7.2');
  
 class UseJQuery extends PageRegular {
   public function check_jQuery($objPage, $objLayout, $objPageRegular) {
@@ -52,7 +52,7 @@ class UseJQuery extends PageRegular {
     if ($objLayout->usejquery)
     {
       $strSrc = (($objLayout->jquerySource=='jquery_local') ? TL_PLUGINS_URL : '') . $GLOBALS['TL_JQUERY_VERSION'][$objLayout->jqueryVersion][$objLayout->jquerySource];
-      $strSrc = $strSrc ? $strSrc : (TL_PLUGINS_URL . 'plugins/jquery/js/jquery-1.6.2.min.js');
+      $strSrc = $strSrc ? $strSrc : (TL_PLUGINS_URL . 'plugins/jquery/js/jquery-1.7.2.min.js');
       $this->jQueryScripts = '<script' . (($objPage->outputFormat == 'xhtml' || version_compare(VERSION.'.'.BUILD, '2.10.0', '<')) ? ' type="text/javascript"' : '') . ' src="' . $strSrc .'"></script>' . "\n";
       
       if ($objLayout->jqueryNoConflict)
