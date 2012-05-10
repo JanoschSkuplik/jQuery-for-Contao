@@ -34,7 +34,7 @@ class UseJQuery extends PageRegular {
     {
     	define('TL_PLUGINS_URL','');
     }
-    
+   
 
     if ($objLayout->mooSource == 'moo_jq_local' || $objLayout->mooSource == 'moo_jq_google')
     {
@@ -51,7 +51,14 @@ class UseJQuery extends PageRegular {
     
     if ($objLayout->usejquery)
     {
-      $strSrc = (($objLayout->jquerySource=='jquery_local') ? TL_PLUGINS_URL : '') . $GLOBALS['TL_JQUERY_VERSION'][$objLayout->jqueryVersion][$objLayout->jquerySource];
+      $strJquery = $GLOBALS['TL_JQUERY_VERSION'][$objLayout->jqueryVersion][$objLayout->jquerySource];
+      
+      if ($this->Environment->ssl && $objLayout->jquerySource!='jquery_jquery' && $objLayout->jquerySource!='jquery_local')
+      {
+      	$strJquery = str_replace('http://','https://',$strJquery);
+      }
+      
+      $strSrc = (($objLayout->jquerySource=='jquery_local') ? TL_PLUGINS_URL : '') . $strJquery;
       $strSrc = $strSrc ? $strSrc : (TL_PLUGINS_URL . 'plugins/jquery/js/jquery-1.7.2.min.js');
       $this->jQueryScripts = '<script' . (($objPage->outputFormat == 'xhtml' || version_compare(VERSION.'.'.BUILD, '2.10.0', '<')) ? ' type="text/javascript"' : '') . ' src="' . $strSrc .'"></script>' . "\n";
       
