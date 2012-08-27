@@ -62,7 +62,7 @@ class UseJQuery extends PageRegular
 			}
 
 			$strSrc = (($objLayout -> jquerySource == 'jquery_local') ? TL_PLUGINS_URL : '') . $strJquery;
-			$strSrc = $strSrc ? $strSrc : (TL_PLUGINS_URL . 'plugins/jquery/js/jquery-1.7.2.min.js');
+			$strSrc = $strSrc ? $strSrc : (TL_PLUGINS_URL . 'plugins/jquery/js/jquery-1.8.0.min.js');
 			$this -> jQueryScripts = '<script' . (($objPage -> outputFormat == 'xhtml' || version_compare(VERSION . '.' . BUILD, '2.10.0', '<')) ? ' type="text/javascript"' : '') . ' src="' . $strSrc . '"></script>' . "\n";
 
 			// check if theme+ is installed
