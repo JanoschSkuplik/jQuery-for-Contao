@@ -31,6 +31,12 @@ $GLOBALS['TL_HOOKS']['generatePage'][] = array('UseJQuery', 'check_jQuery');
 
 //Array of versions and paths
 $GLOBALS['TL_JQUERY_VERSION'] = array(
+	'last_version_from_jquery' => array(
+		'jquery_local' => 'http://code.jquery.com/jquery.min.js',
+		'jquery_jquery' => 'http://code.jquery.com/jquery.min.js',
+		'jquery_googleapis' => 'http://code.jquery.com/jquery.min.js',
+		'jquery_microsoft' => 'http://code.jquery.com/jquery.min.js'
+	),
 	'1.8.0' => array(
     'jquery_local' => 'plugins/jquery/js/jquery-1.8.0.min.js',
     'jquery_jquery' => 'http://code.jquery.com/jquery-1.8.0.min.js',
