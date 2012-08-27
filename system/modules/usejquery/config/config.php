@@ -31,23 +31,17 @@ $GLOBALS['TL_HOOKS']['generatePage'][] = array('UseJQuery', 'check_jQuery');
 
 //Array of versions and paths
 $GLOBALS['TL_JQUERY_VERSION'] = array(
+	'1.8.0' => array(
+    'jquery_local' => 'plugins/jquery/js/jquery-1.8.0.min.js',
+    'jquery_jquery' => 'http://code.jquery.com/jquery-1.8.0.min.js',
+    'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js',
+    'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.min.js'  
+	),
   '1.7.2' => array(
     'jquery_local' => 'plugins/jquery/js/jquery-1.7.2.min.js',
     'jquery_jquery' => 'http://code.jquery.com/jquery-1.7.2.min.js',
     'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js',
     'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js'  
-  ),
-  '1.7.1' => array(
-    'jquery_local' => 'plugins/jquery/js/jquery-1.7.1.min.js',
-    'jquery_jquery' => 'http://code.jquery.com/jquery-1.7.1.min.js',
-    'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
-    'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js'
-  ),
-  '1.7' => array(
-    'jquery_local' => 'plugins/jquery/js/jquery-1.7.min.js',
-    'jquery_jquery' => 'http://code.jquery.com/jquery-1.7.min.js',
-    'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js',
-    'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js'
   ),
   '1.6.4' => array(
     'jquery_local' => 'plugins/jquery/js/jquery-1.6.4.min.js',
@@ -55,47 +49,11 @@ $GLOBALS['TL_JQUERY_VERSION'] = array(
     'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js',
     'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.4.min.js'
   ),
-  '1.6.3' => array(
-    'jquery_local' => 'plugins/jquery/js/jquery-1.6.3.min.js',
-    'jquery_jquery' => 'http://code.jquery.com/jquery-1.6.3.min.js',
-    'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js',
-    'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.3.min.js'
-  ),
-  '1.6.2' => array(
-    'jquery_local' => 'plugins/jquery/js/jquery-1.6.2.min.js',
-    'jquery_jquery' => 'http://code.jquery.com/jquery-1.6.2.min.js',
-    'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js',
-    'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js'
-  ),
-  '1.6.1' => array(
-    'jquery_local' => 'plugins/jquery/js/jquery-1.6.1.min.js',
-    'jquery_jquery' => 'http://code.jquery.com/jquery-1.6.1.min.js',
-    'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js',
-    'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1.min.js'
-  ),
-  '1.6' => array(
-    'jquery_local' => 'plugins/jquery/js/jquery-1.6.min.js',
-    'jquery_jquery' => 'http://code.jquery.com/jquery-1.6.min.js',
-    'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js',
-    'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.min.js'
-  ),
   '1.5.2' => array(
     'jquery_local' => 'plugins/jquery/js/jquery-1.5.2.min.js',
     'jquery_jquery' => 'http://code.jquery.com/jquery-1.5.2.min.js',
     'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js',
     'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.2.min.js'
-  ),
-  '1.5.1' => array(
-    'jquery_local' => 'plugins/jquery/js/jquery-1.5.1.min.js',
-    'jquery_jquery' => 'http://code.jquery.com/jquery-1.5.1.min.js',
-    'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js',
-    'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.1.min.js'
-  ),
-  '1.5' => array(
-    'jquery_local' => 'plugins/jquery/js/jquery-1.5.min.js',
-    'jquery_jquery' => 'http://code.jquery.com/jquery-1.5.min.js',
-    'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js',
-    'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.min.js'
   )
 );
 
