@@ -43,4 +43,9 @@ $GLOBALS['TL_LANG']['tl_layout']['jquery_local']       = 'Die lokale jQuery-Date
 $GLOBALS['TL_LANG']['tl_layout']['jquery_googleapis']  = 'Die jQuery-Datei von googleapis.com laden';
 $GLOBALS['TL_LANG']['tl_layout']['jquery_microsoft']  = 'Die jQuery-Datei von ajax.microsoft.com laden';
 $GLOBALS['TL_LANG']['tl_layout']['jquery_jquery']     = 'Die jQuery-Datei von code.jquery.com laden';
+
+
+$GLOBALS['TL_LANG']['tl_layout']['last_version_from_jquery'] = 'aktuelle Version über das jQuery-CDN laden';
+
+
 ?>

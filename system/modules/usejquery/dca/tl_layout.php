@@ -94,6 +94,10 @@ class tl_layout_jquery extends Backend
 
 		foreach ($GLOBALS['TL_JQUERY_VERSION'] as $k=>$v)
 		{
+			if ($k == 'last_version_from_jquery')
+			{
+				$k = $GLOBALS['TL_LANG']['tl_layout']['last_version_from_jquery'];
+			}
       $versions[] = $k;
 		}
 

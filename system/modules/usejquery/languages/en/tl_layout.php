@@ -43,4 +43,7 @@ $GLOBALS['TL_LANG']['tl_layout']['jquery_local']       = 'use the local jQuery-f
 $GLOBALS['TL_LANG']['tl_layout']['jquery_googleapis']  = 'use the jQuery-file from googleapis.com';
 $GLOBALS['TL_LANG']['tl_layout']['jquery_microsoft']  = 'use the jQuery-file from ajax.microsoft.com';
 $GLOBALS['TL_LANG']['tl_layout']['jquery_jquery']     = 'use the jQuery-file from code.jquery.com';
+
+
+$GLOBALS['TL_LANG']['tl_layout']['last_version_from_jquery'] = 'current version from jQuery-CDN';
 ?>
