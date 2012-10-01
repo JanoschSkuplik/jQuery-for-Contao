@@ -27,7 +27,7 @@ if (!defined('TL_ROOT'))
  * @license	   LGPL
  * @filesource
  */
-define('JQUERY', '1.8.0');
+define('JQUERY', '1.8.2');
 
 class UseJQuery extends PageRegular
 {

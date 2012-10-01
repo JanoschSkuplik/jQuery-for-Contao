@@ -37,6 +37,12 @@ $GLOBALS['TL_JQUERY_VERSION'] = array(
 		'jquery_googleapis' => 'http://code.jquery.com/jquery.min.js',
 		'jquery_microsoft' => 'http://code.jquery.com/jquery.min.js'
 	),
+	'1.8.2' => array(
+		'jquery_local' => 'plugins/jquery/js/jquery-1.8.2.min.js',
+    'jquery_jquery' => 'http://code.jquery.com/jquery-1.8.2.min.js',
+    'jquery_googleapis' => 'https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js',
+    'jquery_microsoft' => 'http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js'  
+	),
 	'1.8.0' => array(
     'jquery_local' => 'plugins/jquery/js/jquery-1.8.0.min.js',
     'jquery_jquery' => 'http://code.jquery.com/jquery-1.8.0.min.js',
