@@ -1,0 +1,7 @@
+
+<?php 
+$GLOBALS['TL_HEAD'][] = '
+<script type="text/javascript">
+  $.noConflict();
+</script>';
+?>
